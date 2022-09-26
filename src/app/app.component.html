@@ -1,0 +1,22 @@
+<main class="container">
+  <h2>FIS Global Airline Management System</h2>
+
+  <ul class="nav my-2 mb-3" style="background-color: #e3f2fd;">
+    <li class="nav-item">
+      <a  class="nav-link active" routerLink="/displayAdmin">Display Flight Details</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/insert">Insert Flight Details</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/deleteAdmin">Delete Flight Details</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/displayPassenger">Display Passenger Details</a>
+    </li>
+  </ul>
+
+  <section class="mt-2 p-2"> 
+    <router-outlet></router-outlet>
+  </section>
+</main>

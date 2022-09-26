@@ -1,0 +1,55 @@
+<main class="container">
+
+    <form class="mt-2">
+        <fieldset>
+            <legend>
+                <div class="mb-2">
+                    <label for="flight Id" class="form-label">Flight id</label>
+                    <input type="number" class="form-control" placeholder="Flight id" [(ngModel)] = "t_flight_id" name="t_flight_id" >
+                </div>
+        
+                <div class="mb-2">
+                    <label for="Airline Id" class="form-label">Airline id</label>
+                    <input type="number" class="form-control" placeholder="Airline id" [(ngModel)] = "t_airline_id" name="t_airline_id">
+                </div>
+                
+                <div class="mb-2">
+                    <label for="Airline Name" class="form-label">Airline Name</label>
+                    <input type="text" class="form-control" placeholder="Airline Name" [(ngModel)] = "t_airline_name" name="t_airline_name">
+                </div>
+        
+                <div class="mb-2">
+                    <label for="From Location" class="form-label">From Location</label>
+                    <input type="text" class="form-control" placeholder="From Location" [(ngModel)] = "t_from_location" name="t_from_location">
+                </div>
+        
+                <div class="mb-2">
+                    <label for="To Location" class="form-label">To Location</label>
+                    <input type="text" class="form-control" placeholder="To Location" [(ngModel)] = "t_to_location" name="t_to_location" >
+                </div>
+        
+                <div class="mb-2">
+                    <label for="Departure Time" class="form-label">Departure Time</label>
+                    <input type="text" class="form-control" placeholder="Departure Time" [(ngModel)] = "t_departure_time" name="t_departure_time">
+                </div>
+        
+                <div class="mb-2">
+                    <label for="Arrival Time" class="form-label">Arrival Time</label>
+                    <input type="text" class="form-control" placeholder="Arrival Time" [(ngModel)] = "t_arrival_time" name="t_arrival_time">
+                </div>
+                
+                <div class="mb-2">
+                    <label for="Duration" class="form-label">Duration</label>
+                    <input type="text" class="form-control" placeholder="Duration" [(ngModel)] = "t_duration" name="t_duration">
+                </div>
+        
+                <div class="mb-2">
+                    <label for="Total Seats" class="form-label">Total Seats</label>
+                    <input type="number" class="form-control" placeholder="Total Seats" [(ngModel)] = "t_total_seats" name="t_total_seats">
+                </div>
+        
+                <button class="btn btn-primary my-2" type="submit" (click)="insertAdminData()" >Insert Data </button>        
+            </legend>
+        </fieldset>
+    </form>
+</main>

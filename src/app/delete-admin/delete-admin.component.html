@@ -1,0 +1,9 @@
+<main class="container">
+
+    Enter the Flight ID to Delete :  <input type="number" placeholder="Flight id" [(ngModel)] = "t_flight_id" name="t_flight_id" >
+    <button class="btn btn-sm btn-warning m-2" type="submit" (click) = "deleteAdminData()">Delete Data</button>
+
+    <div *ngIf="result" class="alert alert-warning my-2 " role="alert">
+           <span>  {{ result }} </span>
+    </div>
+</main>

@@ -1,0 +1,32 @@
+<main>
+  <p class="m-1">Display Component</p>
+  <button class="btn btn-primary m-2" type="submit" (click)="displayAdminDetails()" >Show Data</button>
+  <table class="table table-hover m-2">
+    <thead>
+      <tr>
+        <th scope="col">Flight ID</th>
+        <th scope="col">Airline ID</th>
+        <th scope="col">Airline Name</th>
+        <th scope="col">From Location</th>
+        <th scope="col">To Location</th>
+        <th scope="col">Departure Time</th>
+        <th scope="col">Arrival Time</th>
+        <th scope="col">Duration</th>
+        <th scope="col">Total Seats</th>
+      </tr>
+    </thead>
+      <tbody>
+          <tr *ngFor="let flight of flights">
+            <td>{{flight.flight_id}}</td>
+            <td>{{flight.airline_id}}</td>
+            <td>{{flight.airline_name}}</td>
+            <td>{{flight.from_location}}</td>
+            <td>{{flight.to_location}}</td>
+            <td>{{flight.departure_time}}</td>
+            <td>{{flight.arrival_time}}</td>
+            <td>{{flight.duration}}</td>
+            <td>{{flight.total_seats}}</td>
+          </tr>
+      </tbody>
+  </table>
+</main>
