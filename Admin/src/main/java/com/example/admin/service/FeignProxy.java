@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.example.admin.model.PassengerDto;
 
-@FeignClient(name="PASSENGER")
+@FeignClient(name="passengerservice")
 public interface FeignProxy {
 	
 	@GetMapping("/passenger/display")
